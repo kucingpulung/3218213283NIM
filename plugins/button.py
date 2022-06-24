@@ -1,7 +1,3 @@
-# Credits: @mrismanaziz
-# FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
-# t.me/SharingUserbot & t.me/Lunatic0de
-
 from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP
 from pyrogram.types import InlineKeyboardButton
 
@@ -40,11 +36,11 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="🗝 𝙏𝙐𝙏𝙊𝙍𝙄𝘼𝙇 🗝", callback_data="about"),
-            ],
-            [
                 InlineKeyboardButton(text="🔹 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 1 🔹", url=client.invitelink),
                 InlineKeyboardButton(text="🔹 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2 🔹", url=client.invitelink2),
+            ],
+            [
+                InlineKeyboardButton(text="🗝 𝙏𝙐𝙏𝙊𝙍𝙄𝘼𝙇 🗝", callback_data="about"),
             ],
             [InlineKeyboardButton(text="✖️ 𝙏𝙐𝙏𝙐𝙋 ✖️", callback_data="close")],
         ]
