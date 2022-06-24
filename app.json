@@ -1,0 +1,86 @@
+{
+  "name": "P",
+  "description": "P",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/bulanbintang69/hsuiw6447",
+  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Masukan Bot token, Dapatkan dari t.me/BotFather",
+      "value": "5374538176:AAFMBpp0vTSvA9DFxtUvaP2px1qq_zHJ1As"
+    },
+    "OWNER": {
+      "description": "Masukan Username Telegram untuk Owner BOT [ Jangan Pake @ ]",
+      "value": "Zerozerozoro"
+    },
+    "OWNER_ID": {
+      "description": "Masukan User ID Telegram untuk Owner BOT",
+      "value": "1772828899"
+    },
+    "ADMINS": {
+      "description": "Masukan User ID untuk mendapatkan hak Admin BOT [Hanya dapat membuat link]",
+      "value": "1772828899"
+    },
+    "APP_ID": {
+      "description": "Dapatkan APP ID di web my.telegram.org",
+      "value": "18817248"
+    },
+    "API_HASH": {
+      "description": "Dapatkan API HASH di web my.telegram.org",
+      "value": "e399a5dc3a27bee12c4a76001ecb6481"
+    },
+    "CHANNEL_ID": {
+      "description": "Masukan ID Channel Untuk [Channel Database]",
+      "value": "-1001575867152"
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "Masukan ID dari Channel Atau Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "-1001704521324"
+    },
+    "FORCE_SUB_GROUP": {
+      "description": "Masukan ID dari Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "-1001704521324"
+    },
+    "START_MESSAGE": {
+      "description": "Pesan /start memulai awalan ke bot, Gunakan format parsemode HTML",
+      "value": "ᴛᴇʀɪᴍᴀᴋᴀꜱɪʜ {first} ᴛᴇʟᴀʜ ᴍᴇɴɢɢᴜᴋᴀɴ ʙᴏᴛ ᴋᴀᴍɪ."
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML",
+      "value": "𝕎𝕀𝔹𝕌 𝕄𝔼𝕊𝕌𝕄\n\n𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 :\n➥ 1. Start Bot,\n➥ 2. Join Channel 1 2,\n➥ 3. Klik 📂 𝘼𝙈𝘽𝙄𝙇 𝙁𝙄𝙇𝙀 📂,\n➥ 4. Tunggu hingga File nya Muncul.\n\n⚠️Jangan spam bot, tunggu beberapa detik sampai file muncul⚠️"
+    },
+    "CHANNEL":{
+      "description": "Masukan Username Channel anda Untuk Wajib Subscribenya [ Jangan Pake @ ]",
+      "value": "RestAreaDewasa",
+      "required": false
+    },
+    "GROUP":{
+      "description": "Masukan Username dari Group anda Untuk Wajib Subscribenya [ Jangan Pake @ ]",
+      "value": "RestAreaGroup",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
