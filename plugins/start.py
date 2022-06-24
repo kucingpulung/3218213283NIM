@@ -135,7 +135,8 @@ async def start_command(client: Bot, message: Message):
 @Bot.on_message(filters.command("start") & filters.private)
 async def not_joined(client: Bot, message: Message):
     buttons = fsub_button(client, message)
-    await message.reply_sticker(sticker="CAACAgUAAxkBAAEFx4Nid_0Ynl_yd7Xfzl06encsAAG9kX4AAo4FAAKwHrhXxoEnBBN0X7wkBA", quote=True)
+    await message.reply_sticker(sticker="CAACAgIAAxkBAAEHFzRitfxZ95q2dB6XUVlPRj9JPV5buAACvwUAAj-VzAr5wuwdpEkoEykE", quote=True)
+    await message.reply_text("𝓀𝒶𝓂𝓊 𝒽𝒶𝓇𝓊𝓈 𝒿𝑜𝒾𝓃 𝒸𝒽𝒶𝓃𝓃𝑒𝓁 𝟣 & 𝟤 𝓊𝓃𝓉𝓊𝓀 𝓅𝒶𝓀𝒶𝒾 𝒷𝑜𝓉 𝒾𝓃𝒾....")
     await message.reply(
         text=FORCE_MSG.format(
             first=message.from_user.first_name,
