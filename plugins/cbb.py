@@ -13,12 +13,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text=f"𝕎𝕀𝔹𝕌 𝕄𝔼𝕊𝕌𝕄\n\n𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 :\n➥ 1. Start Bot,\n➥ 2. Join Channel 1 2,\n➥ 3. Klik 📂 𝘼𝙈𝘽𝙄𝙇 𝙁𝙄𝙇𝙀 📂,\n➥ 4. Tunggu hingga File nya Muncul.\n\n⚠️Jangan spam bot, tunggu beberapa detik sampai file muncul⚠️\n",
+            text=f"WᵢBᵤ ₑₗᵢₜₑ\n\n𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 :\n➥ 1. Start Bot,\n➥ 2. Join Channel 1 2,\n➥ 3. Klik 📂 𝘼𝙈𝘽𝙄𝙇 𝙁𝙄𝙇𝙀 📂,\n➥ 4. Tunggu hingga File nya Muncul.\n\n⚠️Jangan spam bot, tunggu beberapa detik sampai file muncul⚠️\n",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🏷 𝕎𝕀𝔹𝕌 𝕄𝔼𝕊𝕌𝕄 🏷", url = f'https://t.me/wibumesum'),
+                        InlineKeyboardButton("🏷 WᵢBᵤ ₑₗᵢₜₑ 🏷", url = f'https://t.me/wibumesum'),
                         InlineKeyboardButton("✖️ 𝙏𝙐𝙏𝙐𝙋 ✖️", callback_data="close"),
                     ],
                 ]
