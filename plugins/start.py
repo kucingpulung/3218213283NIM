@@ -137,7 +137,7 @@ async def not_joined(client: Bot, message: Message):
     buttons = fsub_button(client, message)
     await message.reply_sticker(sticker="CAACAgIAAxkBAAEHFzRitfxZ95q2dB6XUVlPRj9JPV5buAACvwUAAj-VzAr5wuwdpEkoEykE", quote=True)
     await message.reply_text("𝓀𝒶𝓂𝓊 𝒽𝒶𝓇𝓊𝓈 𝒿𝑜𝒾𝓃 𝒸𝒽𝒶𝓃𝓃𝑒𝓁 𝟣 & 𝟤 𝓊𝓃𝓉𝓊𝓀 𝓅𝒶𝓀𝒶𝒾 𝒷𝑜𝓉 𝒾𝓃𝒾...."),
-        disable_web_page_preview=True       
+        disable_web_page_preview=True,      
         reply_markup=InlineKeyboardMarkup(
                 [
                     [
