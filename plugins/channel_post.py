@@ -23,12 +23,10 @@ from helper_func import encode
 async def channel_post(client: Client, message: Message):
     reply_text = await message.reply_text("<code>Tunggu Sebentar...</code>", quote=True)
     try:
-        post_message = await message.copy(
-            chat_id=client.db_channel.id, caption="∆ Uploader By ➤ <a href='https://t.me/wibumesum'>klik disini</a>\n∆ Twitter ➤ <a href='https://twitter.com/Ahegao_Maxxx?s=09'>klik disini</a>\n\nDon't forget to share (っ'-')╮=͟͟͞͞💌")
+        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
-        post_message = await message.copy(
-            chat_id=client.db_channel.id, caption="∆ Uploader By ➤ <a href='https://t.me/wibumesum'>klik disini</a>\n∆ Twitter ➤ <a href='https://twitter.com/Ahegao_Maxxx?s=09'>klik disini</a>\n\nDon't forget to share (っ'-')╮=͟͟͞͞💌")
+        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
     except Exception as e:
         print(e)
         await reply_text.edit_text("<b>Telah Terjadi Error...</b>")
